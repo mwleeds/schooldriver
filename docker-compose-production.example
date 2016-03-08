@@ -1,5 +1,5 @@
 redis:
-  image: dockerfile/redis
+  image: redis
 worker:
   build: .
   command: ./manage.py celery worker -E -A django_sis --loglevel=INFO

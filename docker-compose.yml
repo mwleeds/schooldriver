@@ -1,7 +1,7 @@
 db:
   image: postgres
 redis:
-  image: dockerfile/redis
+  image: redis
 web:
   build: .
   command: ./run.sh
